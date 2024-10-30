@@ -1,0 +1,175 @@
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 3rem 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+header {
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+header > img {
+    height: 7rem;
+    width: 20rem;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    border: 2px solid rgba(227, 161, 91, 0.38);
+    border-radius: 1rem;
+    background-color: black;
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #E3A15B;
+}
+
+.promo {
+    height: 20rem;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    background-image: url("logos/elegant-black-friday-jewelry-sale-with-sparkling-vector-accents_1189153-3395.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.promo h1 {
+    margin: 0;
+}
+
+.promo article {
+    padding-left: 4rem;
+}
+
+.buy{
+    background-color: #131313;
+    color: white;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 32%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 0 5px;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.carus {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+footer{
+    margin-top: 2rem;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+    background-color: #333;
+    color: white;
+}
+
+footer div {
+    flex: 1;
+    text-align: center;
+}
+
+footer img {
+    height: 3rem;
+    width: 15rem;
+    display: block;
+    margin: 0 auto;
+}
